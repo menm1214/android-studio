@@ -1,6 +1,7 @@
 package com.example.bestel
 
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,5 +17,11 @@ class MainActivity2 : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        val knop2 = findViewById<Button>(R.id.knop2)
+        knop2.setOnClickListener {
+            finish()
+        }
+
+
     }
 }

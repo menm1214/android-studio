@@ -7,13 +7,15 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity2">
 
-    <SeekBar
-        android:id="@+id/seekBar2"
-        style="@style/Widget.AppCompat.SeekBar.Discrete"
-        android:layout_width="151dp"
-        android:layout_height="126dp"
-        android:max="10"
-        android:progress="3"
-        tools:layout_editor_absoluteX="150dp"
-        tools:layout_editor_absoluteY="174dp" />
+    <Button
+        android:id="@+id/knop2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="terug"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.721" />
 </androidx.constraintlayout.widget.ConstraintLayout>

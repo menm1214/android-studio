@@ -7,15 +7,51 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity2">
 
-    <Button
-        android:id="@+id/knop2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="terug"
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="38dp"
+        android:layout_height="34dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.721" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/back_arrow_illustration_free_vector" />
+
+    <ImageView
+        android:id="@+id/imageViewbg"
+        android:layout_width="352dp"
+        android:layout_height="259dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.536"
+        app:srcCompat="@drawable/schermafbeelding_2026_10_06_103628_removebg_preview" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="161dp"
+        android:layout_height="169dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/_323123" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="138dp"
+        android:layout_height="132dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewbg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/_1" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

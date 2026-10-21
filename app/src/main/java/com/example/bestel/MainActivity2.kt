@@ -1,5 +1,6 @@
 package com.example.bestel
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
@@ -7,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import android.widget.ImageView
+import android.widget.ImageButton
 
 class MainActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,7 +24,11 @@ class MainActivity2 : AppCompatActivity() {
         knop2.setOnClickListener {
             finish()
         }
-
+        val knop = findViewById<ImageView>(R.id.imageView5)
+        knop.setOnClickListener {
+            val intent = Intent(this, MainActivity3::class.java)
+            startActivity(intent)
+        }
 
     }
 }

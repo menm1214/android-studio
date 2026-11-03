@@ -2,10 +2,12 @@ package com.example.bestel
 
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+
 
 class MainActivity3 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,5 +23,16 @@ class MainActivity3 : AppCompatActivity() {
         knop3.setOnClickListener {
             finish()
         }
+        val pizza = findViewById<ImageView>(R.id.pizza_foto)
+        val pizzatext = findViewById<TextView>(R.id.pizza_text)
+        val foto = intent.getIntExtra("plaatje",0)
+        val naam = intent.getStringExtra("pizzatext")
+
+        if (foto != 0) {
+            pizza.setImageResource(foto)
+            pizzatext.setText(naam)
+        }
+
     }
+
 }

@@ -24,11 +24,62 @@ class MainActivity2 : AppCompatActivity() {
         knop2.setOnClickListener {
             finish()
         }
-        val knop = findViewById<ImageView>(R.id.imageView5)
-        knop.setOnClickListener {
+
+        val knop7 = findViewById<ImageView>(R.id.imageView7)
+        knop7.setOnClickListener {
             val intent = Intent(this, MainActivity3::class.java)
             startActivity(intent)
         }
+        val knop3 = findViewById<ImageView>(R.id.imageView3)
+        knop3.setOnClickListener {
+            val intent = Intent(this, MainActivity3::class.java)
+            startActivity(intent)
+        }
+        val knop4 = findViewById<ImageView>(R.id.imageView4)
+        knop4.setOnClickListener {
+            val intent = Intent(this, MainActivity3::class.java)
+            startActivity(intent)
+        }
+        val knop9 = findViewById<ImageView>(R.id.imageView9)
+        knop9.setOnClickListener {
+            val intent = Intent(this, MainActivity3::class.java)
+            startActivity(intent)
+        }
+        val knop10 = findViewById<ImageView>(R.id.imageView10)
+        knop10.setOnClickListener {
+            val intent = Intent(this, MainActivity3::class.java)
+            startActivity(intent)
+        }
+        val knop11 = findViewById<ImageView>(R.id.imageView11)
+        knop11.setOnClickListener {
+            val intent = Intent(this, MainActivity3::class.java)
+            startActivity(intent)
+        }
+        val knop12 = findViewById<ImageView>(R.id.imageView12)
+        knop12.setOnClickListener {
+            val intent = Intent(this, MainActivity3::class.java)
+            startActivity(intent)
+        }
+        val koop = findViewById<Button>(R.id.button)
+        koop.setOnClickListener {
+            val intent = Intent(this, MainActivity3::class.java)
+            startActivity(intent)
+        }
+        val plaatje = findViewById<ImageView>(R.id.imageView5)
+
+        val knop5 = findViewById<ImageView>(R.id.imageView5)
+
+        knop5.setOnClickListener {
+
+            val intent = Intent(this, MainActivity3::class.java)
+
+            intent.putExtra("plaatje", R.drawable.pizza_slami)
+            intent.putExtra("pizzatext", "PIZZA SALAMI ")
+            startActivity(intent)
+        }
+
+
+
 
     }
 }

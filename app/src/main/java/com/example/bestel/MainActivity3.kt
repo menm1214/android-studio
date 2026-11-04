@@ -25,12 +25,18 @@ class MainActivity3 : AppCompatActivity() {
         }
         val pizza = findViewById<ImageView>(R.id.pizza_foto)
         val pizzatext = findViewById<TextView>(R.id.pizza_text)
+        val pizzainfo = findViewById<TextView>(R.id.pizza_info)
+        val pizzaprijs = findViewById<TextView>(R.id.pizza_prijs)
         val foto = intent.getIntExtra("plaatje",0)
         val naam = intent.getStringExtra("pizzatext")
+        val info = intent.getStringExtra("pizzainfo")
+        val prijs = intent.getStringExtra("pizzaprijs")
 
         if (foto != 0) {
             pizza.setImageResource(foto)
             pizzatext.setText(naam)
+            pizzainfo.setText(info)
+            pizzaprijs.setText(prijs)
         }
 
     }

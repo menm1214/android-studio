@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import android.widget.ImageView
-import android.widget.ImageButton
+
 
 class MainActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -75,11 +75,29 @@ class MainActivity2 : AppCompatActivity() {
 
             intent.putExtra("plaatje", R.drawable.pizza_slami)
             intent.putExtra("pizzatext", "PIZZA SALAMI ")
+            intent.putExtra("pizzainfo", "PIZZA met salami ")
+            intent.putExtra("pizzaprijs", "15,00 ")
             startActivity(intent)
         }
+
+        val knop6 = findViewById<ImageView>(R.id.imageView7)
+
+        knop6.setOnClickListener {
+
+            val intent = Intent(this, MainActivity3::class.java)
+
+            intent.putExtra("plaatje", R.drawable._1)
+            intent.putExtra("pizzatext", "PIZZA SUPER DUPER SALAMI ")
+            intent.putExtra("pizzainfo", "PIZZA met super duper veel salami ")
+            intent.putExtra("pizzaprijs", "€45,00 ")
+            startActivity(intent)
+        }
+
+
+    }
+
 
 
 
 
     }
-}
